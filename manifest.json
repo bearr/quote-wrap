@@ -1,0 +1,24 @@
+{
+  "name": "Surround Selection with Quotes",
+  "description": "Wrap selected text in quotes, IDE style",
+  "version": "0.1.6",
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.google.com/*",
+        "*://*.stackoverflow.com/*",
+        "*://*.duckduckgo.com/*",
+        "*://*.npmjs.com/*",
+        "*://*.github.com/*",
+        "*://*.craigslist.org/*"
+      ],
+      "js": [
+        "quotewrap.js"
+      ]
+    }
+  ],
+  "icons": {
+    "128": "quote128.png"
+  }
+}
